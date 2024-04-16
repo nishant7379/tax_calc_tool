@@ -45,15 +45,32 @@ This website allows users to calculate their tax based on their income, age, and
 - CSS3
 - JavaScript
 
-#### How to Contribute:
+### How to Run:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/improvement`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature/improvement`).
-6. Create a new Pull Request.
+To run the tax calculator website locally on your machine, follow these steps:
 
----
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/your-username/tax-calculator.git
+   ```
 
-By [Nishant Verma]
+2. **Navigate to the Directory:**
+   ```
+   cd tax-calculator
+   ```
+
+3. **Open the Project:**
+   - Open the project directory in your preferred code editor.
+
+4. **Run the Website:**
+   - Simply open the `index.html` file in your web browser.
+
+5. **Interact with the Website:**
+   - Enter your gross annual income, additional income, deductions, and select your age range.
+   - Ensure all input fields are correctly filled. Error icons will appear if any incorrect values are entered.
+   - Select your age range from the dropdown menu if not already selected.
+   - Click the "Submit" button.
+   - The modal popup will display the calculated tax amount.
+
+--- 
+By Nishant Verma
