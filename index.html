@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="ttt">Tax Calculator</h1>
+    <form id="taxForm">
+        <div class="input-group">
+            <label for="income" class="bol">Enter Gross Annual Income</label>
+            <input type="number" id="income" min="0" step="0.01" required placeholder="Enter Gross Annual Income">
+            <div class="error-icon" id="incomeErrorIcon" title="Please enter a valid number"></div>
+            <span class="question-mark" id="incomeQuestionMark">?</span>
+        </div>
+      <div class="input-group">
+        <label for="extraIncome" class="bol">Enter Extra Income</label>
+        <input type="number" id="extraIncome" min="0" step="0.01" placeholder="Enter Extra Income">
+        <div class="error-icon" id="extraIncomeErrorIcon" title="Please enter a valid number"></div>
+      </div>
+      <div class="input-group">
+        <label for="age" class="bol">Enter Age Group</label>
+        <select id="age">
+          <option value="<40">&lt;40</option>
+          <option value=">=40&<60">&ge;40 &lt;60</option>
+          <option value=">=60">&ge;60</option>
+        </select>
+        <div class="error-icon" id="ageErrorIcon" title="Please select an age range"></div>
+      </div>
+      <div class="input-group">
+        <label for="deductions" class="bol">Enter Total Applicable Deductions</label>
+        <input type="number" id="deductions" min="0" step="0.01" placeholder="Enter Total Applicable Deductions">
+        <div class="error-icon" id="deductionsErrorIcon" title="Please enter a valid number"></div>
+      </div>
+      <button type="button" id="calculateButton" class="buttone">Submit</button>
+    </form>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- <h2 class="ext">Your Tax Calculation</h2> -->
+      <div id="result" class="ext"></div>
+      <br>
+      <button class="close-modal" class="ext">Close</button>
+    </div>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
