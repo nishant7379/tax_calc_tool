@@ -1,6 +1,6 @@
 ### TAX CALCULATOR WEBSITE
 
-This website allows users to calculate their tax based on their income, age, and deductions. The tax calculation follows a specific formula detailed below.
+This website allows users to calculate their tax based on their income, age, and deductions. It is a fully Responsive website. The tax calculation follows a specific formula detailed below.
 
 #### Tax Calculation Formula:
 
@@ -26,6 +26,9 @@ This website allows users to calculate their tax based on their income, age, and
 
 - **Modal Popup:**
     - Upon submission, a modal popup displays the calculated tax amount based on the provided information.
+
+- **Responsive Design:**
+    - Mobile-friendly layout to provide a seamless user experience on smaller screens..
 
 #### Usage:
 
